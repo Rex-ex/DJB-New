@@ -1,0 +1,120 @@
+/*universal styles*/
+body {
+    transition: background-color .5s;
+    overflow-x: hidden;
+}
+.big{
+  height: 120rem; /*temporary*/
+}
+#wrapper{
+  font-family: "Verdana", "Calibri", "Arial", sans-serif;
+  line-height: 1.6rem;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+#one{
+  padding-top: 10rem;
+}
+#logo_containter,
+#slider_containter,
+#nav_container{
+  background: pink;
+  height: 6rem;
+  float: left;
+  /* opacity: 0.8;
+  filter: alpha(opacity=80); */
+}
+#logo_containter{
+  height: 10rem;
+  border-radius: 1rem 0rem 1rem 1rem;
+}
+#slider_containter{
+  position: relative;
+  /* height: 6rem; */
+  /* background: #8E9297; */
+}
+#watchword_banner{
+  position: absolute;
+  left: 5rem;
+  height: 5.5rem;
+}
+#djb_logo {
+  position: relative;
+  left: -1rem;
+  bottom: 1.5rem;
+  height: 13rem;
+  width: 13rem;
+  z-index: 13;
+}
+#jumbo{
+  position: relative;
+  top: -2rem;
+  max-width: 50%;
+  margin: 1rem auto;
+  outline: 1px solid green;
+}
+#jumbo img{
+  /* max-height: 95vh; */
+  height: auto;
+  max-width: 100%;
+
+}
+/*NAV*/
+#nav_container li{
+  float: left;
+  width: 16.6%;
+}
+#nav_container li a{
+    position: relative;
+    display: block;
+    color: #595959;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#nav_container li a:hover{
+  color:#000000;
+}
+/*nav hover-underline effect*/
+#nav_container a:after{
+content: '';
+position: absolute;
+height: 0.125rem;
+width: 0;
+left: 50%;
+bottom: -0.5rem;
+opacity: 0;
+background-color: #ff002a;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+-webkit-transform: translate(-50%, 0);
+-moz-transform: translate(-50%, 0);
+-ms-transform: translate(-50%, 0);
+-o-transform: translate(-50%, 0);
+transform: translate(-50%, 0);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+visibility: hidden;
+}
+#nav_container a:hover:after{
+width: 80%;
+visibility: visible;
+opacity: 1;
+}
+#active_underline a:after{
+width: 80%;
+visibility: visible;
+opacity: 1;
+background-color: white;
+
+}
+/*END-nav hover-underline effect*/
+/*END-NAV*/
