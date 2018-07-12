@@ -1,46 +1,26 @@
 /*universal styles*/
 body {
-    transition: background-color .5s;
-    overflow-x: hidden;
-}
-.big{
-  height: 120rem; /*temporary*/
+  transition: background-color .5s;
+  overflow-x: hidden;
 }
 #wrapper{
   font-family: "Verdana", "Calibri", "Arial", sans-serif;
   line-height: 1.6rem;
 }
-header{
+#banner{
   position: fixed;
   top: 0;
+  height: 3rem;
   width: 100%;
   z-index: 20;
-}
-#one{
-  padding-top: 10rem;
-}
-#logo_containter,
-#slider_containter,
-#nav_container{
-  background: pink;
-  height: 6rem;
-  float: left;
   /* opacity: 0.8;
   filter: alpha(opacity=80); */
 }
 #logo_containter{
-  height: 10rem;
-  border-radius: 1rem 0rem 1rem 1rem;
+background: pink;
 }
-#slider_containter{
-  position: relative;
-  /* height: 6rem; */
-  /* background: #8E9297; */
-}
-#watchword_banner{
-  position: absolute;
-  left: 5rem;
-  height: 5.5rem;
+#nav_container{
+background:grey;
 }
 #djb_logo {
   position: relative;
@@ -49,19 +29,6 @@ header{
   height: 13rem;
   width: 13rem;
   z-index: 13;
-}
-#jumbo{
-  position: relative;
-  top: -2rem;
-  max-width: 50%;
-  margin: 1rem auto;
-  outline: 1px solid green;
-}
-#jumbo img{
-  /* max-height: 95vh; */
-  height: auto;
-  max-width: 100%;
-
 }
 /*NAV*/
 #nav_container li{
@@ -117,4 +84,29 @@ background-color: white;
 
 }
 /*END-nav hover-underline effect*/
+#bar_container button{
+  outline: none;
+}
 /*END-NAV*/
+/*JUMBO*/
+#jumbo{
+  position: relative;
+  top: 6rem;
+  max-width: 50%;
+  margin: 1rem auto;
+  outline: 1px solid green;
+}
+#jumbo img{
+  /* max-height: 95vh; */
+  height: auto;
+  max-width: 100%;
+}
+#slider_containter{
+  position: relative;
+  bottom: 70%;
+}
+#watchword_banner{
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}

@@ -22,7 +22,7 @@
     transition: 0.4s;
 }
 .changed button{
-  background-color: black !important;
+  background-color: #111 !important;
 }
 .changed #bar1 {
     -webkit-transform: rotate(-45deg) translate(-0.35rem, 0.25rem);
