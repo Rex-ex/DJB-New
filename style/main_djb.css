@@ -94,19 +94,17 @@ background-color: white;
 /*END-NAV*/
 /*JUMBO*/
 #jumbo{
-  /* position: relative; */
-  /* top: 6rem; */
-  height: 100%;
-  max-width: 50%;
-  margin: 1rem auto;
-  outline: 1px solid green;
-  background-image: url("../images/djb_1.png");
-  background-size: cover;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  max-width: 50%;
+  margin: 1rem auto;
+  outline: 1px solid green;
+  background-image: url("../images/djb_1.png");
+  background-position: top;
+  background-size: cover;
 }
 #jumbo img{
   /* max-height: 95vh; */
@@ -118,7 +116,7 @@ background-color: white;
   top: 30%;
 }
 #watchword_banner{
-  display: block;
+  /* display: block; */
   max-width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
