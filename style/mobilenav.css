@@ -4,8 +4,9 @@
     position: fixed;
     right: 0;
     top: 0;
+    height: 3.5rem;
     border: none;
-    background-color: pink;
+    background-color: grey;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -38,7 +39,7 @@
 /*END Hamburger-nav */
 
 /* The side navigation menu */
-#main {
+#mainCon {
     transition: margin-left .5s;
 }
 #mySidenav {

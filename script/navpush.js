@@ -1,21 +1,21 @@
   //function to OOP  !!! REBUILD
   if (true){
   var sidenav = document.getElementById("mySidenav");
-  var main = document.getElementById("main");
+  var main = document.getElementById("mainCon");
   var btn = document.getElementById("bar_container");
-  var wIw = window.innerWidth;
-  var isOpen = false;
-  
+  var isOpen = false;  
   
   btn.addEventListener('click', toogleNav, false);
-
-  $(window).resize(function(){
-    if ((wIw >= 970) && (isOpen == true)){
-      closeNav();
-    }
-  });
   
-
+  $(document).ready(function() {
+    var win = $(window);
+    win.resize(function(){
+      var wIw = win.innerWidth();
+      if ((wIw >= 970) && (isOpen == true)){
+        closeNav();
+      };
+    });
+  });
   
   function toogleNav(){
     let subMenu = document.getElementsByClassName("changed")[0];

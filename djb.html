@@ -16,66 +16,95 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="wrapper" class="container-fluid">
-
-  <!--Side Menu-->
-  <div id="mySidenav">
-    <ul class="list-unstyled" id="subMenu">
-      <li><a href="#">Start</a></li>
-      <li><a href="#">Oferta</a></li>
-      <li><a href="#">Galeria</a></li>
-      <li><a href="#">Filmy</a></li>
-      <li><a href="#">O&nbsp;Nas</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </div>
-  <!-- end-Side Menu -->
-  <!--Hamburger Icon XS, SM-->
-  <div id="bar_container" class="d-block d-lg-none">
-    <button name="ham_nav">
-      <div id="bar1"></div>
-      <div id="bar2"></div>
-      <div id="bar3"></div>
-      <p>Menu</p>
-    </button>
-  </div>
-  <!-- end-Hamburger Icon XS, SM -->
-  <div id="main">
+<main class="container-fluid">
+  <aside>
+    <!--Side Menu-->
+    <div id="mySidenav">
+      <ul id="subMenu" class="list-unstyled" >
+        <li><a href="#">Start</a></li>
+        <li><a href="#">Oferta</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Filmy</a></li>
+        <li><a href="#">O&nbsp;Nas</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+    <!-- end-Side Menu -->
+    <!--Hamburger Icon XS, SM-->
+    <div id="bar_container" class="d-block d-lg-none">
+      <button name="ham_nav">
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+        <p>Menu</p>
+      </button>
+    </div>
+    <!-- end-Hamburger Icon XS, SM -->
+  </aside>
+  
+  <div id="mainCon">
+    
     <header>
-      <div id="banner" class="row">
-        <div id="logo_containter" class="col-sm-2 col-lg-6">
-          <img id="djb_logo" src="icons/djb_logo.svgz" alt="dj brachole logo"/>
-        </div>
-        <div id="nav_container" class="col-sm-10 col-lg-6">
-          <nav>
-            <ul class="list-unstyled d-none d-lg-block">
-              <li id="active_underline"><a href="#">Start</a></li>
-              <li><a href="#">Oferta</a></li>
-              <li><a href="#">Galeria</a></li>
-              <li><a href="#">Filmy</a></li>
-              <li><a href="#">O&nbsp;Nas</a></li>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
-          </nav>
+      <div id="banner" class="row">        
+        <img id="djb_logo"  src="icons/djb_logo.svg" alt="dj brachole logo"/>
+        <nav class="col-sm-6 col-lg-6">
+          <ul class="list-unstyled d-none d-lg-block">
+            <li id="active_underline"><a href="#">Start</a></li>
+            <li><a href="#">Oferta</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Filmy</a></li>
+            <li><a href="#">O&nbsp;Nas</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+       
+    <section>
+      <div id="jumbo">
+        <!-- <img src="images/djb_1.png" /> -->
+        <div id="slider_containter">
+          <img id="watchword_banner" src="icons/wesele4.svg" alt="logo wesele"/>
         </div>
       </div>
-    </header>
+    </section>
     
+    <section>
+      <div>
+      <p>Witamy serdecznie odwiedzających naszą oficjalną stronę internetową! Nazywamy się Arkadiusz i Marek Wieloch i prowadzimy firmę pod nazwą - <b><span class=orange>DJ</span> BRACHOLE</b>. Oferujemy usługi jako <b>DJ i wodzireje na uroczystościach weselnych</b> oraz innych imprezach tanecznych.</p>
+      <p>Prowadzimy naszą działalność przede wszystkim na terenie <b>Poznania i całej Wielkopolski</b>. Dojazd w dalsze rejony Polski nie jest dla nas problemem!</p>
+      <p>Zapraszamy do zapoznania sie z naszą ofertą!</p>
+      <p>Z dumą prezentujemy nasz <b><a title="Certyfikat - zobacz szczegóły!" href=#><span class=orange>certyfikat</span></a></b> przyznany dzięki naszym wspaniałym Klientom!</p>    
+      <a href=https://www.weselezklasa.pl/ogloszenia-weselne/dj-brachole-wodzirej-na-wesele,22507/ target=_blank title="DJ Brachole - Wodzirej na wesele"><img src=https://www.weselezklasa.pl/banery/Weselezklasa/button_medium.png alt="DJ Brachole - Wodzirej na wesele" border="0" /></a>
+      </div>
+    </section>
 
-  <div id="jumbo">
-    <!-- <img src="images/djb_1.png" /> -->
-    <div id="slider_containter">
-      <img id="watchword_banner" src="icons/wesele4.svgz" alt="logo wesele"/>
-    </div>
-  </div>
-
-  
-  
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed libero tellus. Pellentesque id consectetur risus. Quisque ac cursus ex, sit amet commodo dolor. In feugiat justo eu ipsum posuere, sit amet fringilla nisl rutrum. Ut arcu lacus, congue sit amet felis non, tincidunt sollicitudin justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis arcu sapien, a imperdiet nulla sollicitudin nec. Cras maximus ullamcorper aliquam. Etiam eu est vel dolor volutpat luctus. Maecenas lobortis ex id magna pretium, sit amet dapibus erat ultricies. Donec luctus, metus a facilisis feugiat, justo urna auctor nisi, eget vestibulum leo diam in odio. Maecenas eget nisl nec quam aliquam pretium. Quisque sodales leo felis, sed facilisis turpis placerat finibus.Pellentesque id consectetur risus. Quisque ac cursus ex, sit amet commodo dolor. In feugiat justo eu ipsum posuere, sit amet fringilla nisl rutrum. Ut arcu lacus, congue sit amet felis non, tincidunt sollicitudin justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis arcu sapien, a imperdiet nulla sollicitudin nec. Cras maximus ullamcorper aliquam. Etiam eu est vel dolor volutpat luctus. Maecenas lobortis ex id magna pretium, sit amet dapibus erat ultricies. Donec luctus, metus a facilisis feugiat, justo urna auctor nisi, eget vestibulum leo diam in odio. Maecenas eget nisl nec quam aliquam pretium. Quisque sodales leo felis, sed facilisis turpis placerat finibusPellentesque id consectetur risus. Quisque ac cursus ex, sit amet commodo dolor. In feugiat justo eu ipsum posuere, sit amet fringilla nisl rutrum. Ut arcu lacus, congue sit amet felis non, tincidunt sollicitudin justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis arcu sapien, a imperdiet nulla sollicitudin nec. Cras maximus ullamcorper aliquam. Etiam eu est vel dolor volutpat luctus. Maecenas lobortis ex id magna pretium, sit amet dapibus erat ultricies. Donec luctus, metus a facilisis feugiat, justo urna auctor nisi, eget vestibulum leo diam in odio. Maecenas eget nisl nec quam aliquam pretium. Quisque sodales leo felis, sed facilisis turpis placerat finibus
-  </p>
+    <section>
+      <div class="row">
+        <div class="col-sm-6 col-lg-6">
+          <h3>Uroczystości weselne</h3>  
+          <p>Prowadzenie uroczystości weselnych jako DJ i wodzireje to flagowa pozycja w naszej ofercie! Odpowiednio dobrana muzyka, żywe i aktywne prowadzenie zabawy sprawia, że Państwa Goście świetnie będą bawić się do białego rana! Wiemy, jak ważny jest Ten Dzień w życiu Państwa Młodych i zapewniamy im wsparcie i poczucie fachowo pokierowanej zabawy. Po zakończonym weselu Młoda Para wie, że dobrze wybrali powierzając nam prowadzenie zabawy weselnej. To nasz największy atut!</p>
+        </div>
+        
+        <div class="col-sm-6 col-lg-6">
+          <h3>Imprezy okolicznościowe</h3>
+          <p>Żadna impreza okolicznościowa nie może się obejść bez dobrej muzyki. Skorzystanie z usług DJ jest nowoczesnym i najprosztszym rozwiązaniem. Prowadzimy każdą imprezę z klasą i profesjonalnym podejściem do kazdego zlecenia. Dobieramy muzykę tak aby każdy się dobrze bawił.</p>
+        </div>
+        
+        <div class="col-sm-6 col-lg-6">
+          <h3>Imprezy firmowe</h3>
+          <p>Zespół DJ ów jest doskonałym pomysłem, jako dopełnienie każdego firmowego eventu czy imprezy integracyjnej! Właściwie dostosowana muzyka do charakteru organizowanego przez firmę wydarzenia to klucz do sukcesu. Latynoskie rytmy poderwą na parkiet nawet największego ponuraka do tańca z rozbawionymi koleżankami. Trochę polskich klasyków i cały parkiet śpiewa jednym głosem! Puścimy polskie disco i nagle osoby niesłuchające „takiej” muzyki podskakują ze wszystkimi – to jest magia! Możemy także ukoić nerwy zespołu osób przed nadchodzącym deadlinem wsłuchującego się w dźwięki odprężająco chill…</p>
+        </div>
+        
+        <div class="col-sm-6 col-lg-6">
+          <h3>Czekamy na Twój pomysł!</h3>
+          <p>Czy kiedykolwiek chciałeś zrobić komuś imprezę niespodziankę?? A może chcesz zrobić na kimś wrażenie? Dobra zabawa z odpowiednią muzyką jest trafieniem w dziesiątkę! Realizujemy każde zlecenie, które nie zagraża zdrowiu uczestników i nie jest nielegalne ;-&#41; Imprezy tematyczne, zloty miłośników fantasy, zgrupowania sportowców - swój strój i dekoracje dobieramy do klimatu imprezy </p>
+        </div>
+      </div>
+    </section>
   
   </div>  
-</div>
+</main>
 
 <div id="test-RWD">
 </div>

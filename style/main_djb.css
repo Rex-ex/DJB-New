@@ -7,16 +7,17 @@ body {
   overflow-x: hidden;
   background: honeydew;
 }
-#wrapper{
+main{
   font-family: "Verdana", "Calibri", "Arial", sans-serif;
   line-height: 1.6rem;
 }
 #banner{
   position: fixed;
   top: 0;
-  height: 3rem;
+  height: 3.5rem;
   width: 100%;
   z-index: 20;
+  background:grey;
   /* opacity: 0.8;
   filter: alpha(opacity=80); */
 }
@@ -26,20 +27,19 @@ background: pink;
 #nav_container{
 background:grey;
 }
-#djb_logo {
+#djb_logo{
   position: relative;
-  left: -1rem;
   bottom: 1.5rem;
   height: 13rem;
   width: 13rem;
   z-index: 13;
 }
 /*NAV*/
-#nav_container li{
+#banner li{
   float: left;
   width: 16.6%;
 }
-#nav_container li a{
+#banner li a{
     position: relative;
     display: block;
     color: #595959;
@@ -47,11 +47,11 @@ background:grey;
     text-decoration: none;
     text-transform: uppercase;
 }
-#nav_container li a:hover{
+#banner li a:hover{
   color:#000000;
 }
 /*nav hover-underline effect*/
-#nav_container a:after{
+#banner a:after{
 content: '';
 position: absolute;
 height: 0.125rem;
@@ -75,7 +75,7 @@ transform: translate(-50%, 0);
 -ms-backface-visibility: hidden;
 visibility: hidden;
 }
-#nav_container a:hover:after{
+#banner a:hover:after{
 width: 80%;
 visibility: visible;
 opacity: 1;
@@ -85,7 +85,6 @@ width: 80%;
 visibility: visible;
 opacity: 1;
 background-color: white;
-
 }
 /*END-nav hover-underline effect*/
 #bar_container button{
@@ -106,17 +105,10 @@ background-color: white;
   background-position: top;
   background-size: cover;
 }
-#jumbo img{
-  /* max-height: 95vh; */
-  /* height: auto; */
-  /* max-width: 100%; */
-}
 #slider_containter{
   position: relative;
   top: 30%;
 }
 #watchword_banner{
-  /* display: block; */
   max-width: 80%;
-  /* margin: 0 auto; */
 }
