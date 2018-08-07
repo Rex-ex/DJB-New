@@ -11,6 +11,9 @@ main{
   font-family: "Verdana", "Calibri", "Arial", sans-serif;
   line-height: 1.6rem;
 }
+#mainCon{
+  position:relative;
+}
 #banner{
   position: fixed;
   top: 0;
@@ -27,8 +30,9 @@ background: pink;
 #nav_container{
 background:grey;
 }
-#djb_logo{
-  position: relative;
+
+#djb_logo img{
+  position:relative;
   bottom: 1.5rem;
   height: 13rem;
   width: 13rem;

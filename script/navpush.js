@@ -7,7 +7,7 @@
   
   btn.addEventListener('click', toogleNav, false);
   
-  $(document).ready(function() {
+  $(document).ready(function(){
     var win = $(window);
     win.resize(function(){
       var wIw = win.innerWidth();
@@ -26,25 +26,19 @@
     }    
   }
   
-  function closeNav() {
+  function closeNav(){
       sidenav.style.width = "0";
       main.style.marginLeft = "0";
       btn.classList.remove("changed");
       document.body.style.backgroundColor = "honeydew";
       isOpen = false;
-    } 
+  } 
     
-  function openNav() {
+  function openNav(){
     sidenav.style.width = "250px";
     main.style.marginLeft = "-250px";
     btn.classList.add("changed");
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     isOpen = true;   
   }
-
-
-
-  
-  
-  
 }
