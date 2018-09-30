@@ -1,0 +1,152 @@
+/*universal styles*/
+/* line 3, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+html {
+  height: 100%;
+}
+
+/* line 6, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+body {
+  transition: background-color .5s;
+  overflow-x: hidden;
+  background: honeydew;
+}
+
+/* line 11, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+main {
+  font-family: "Verdana", "Calibri", "Arial", sans-serif;
+  line-height: 1.6rem;
+}
+
+/* line 15, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#mainCon {
+  position: relative;
+}
+
+/* line 18, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 22, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#logo_containter {
+  background: pink;
+}
+
+/* line 25, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#nav_container {
+  background: grey;
+}
+
+/* line 29, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#djb_logo img {
+  position: relative;
+  bottom: 1.5rem;
+  height: 13rem;
+  width: 13rem;
+  z-index: 13;
+}
+
+/*NAV*/
+/* line 37, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner {
+  position: fixed;
+  top: 0;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 20;
+  background: none;
+  /*nav hover-underline effect*/
+}
+
+/* line 45, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner li {
+  float: left;
+  width: 16.6%;
+}
+
+/* line 49, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner li a {
+  position: relative;
+  display: block;
+  color: #595959;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 57, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner li a:hover {
+  color: #000000;
+}
+
+/* line 61, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner a:after {
+  content: '';
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.5rem;
+  opacity: 0;
+  background-color: #ff002a;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  visibility: hidden;
+}
+
+/* line 77, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner a:hover:after {
+  width: 80%;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 83, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#banner #active_underline a:after {
+  width: 80%;
+  visibility: visible;
+  opacity: 1;
+  background-color: pink;
+}
+
+/*END nav-hover-underline effect*/
+/*END-NAV*/
+/*JUMBO*/
+/* line 94, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#jumbo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 50%;
+  margin: 3.5rem auto 0;
+  outline: 1px solid green;
+  background-image: url("../images/djb_1.png");
+  background-position: top;
+  background-size: cover;
+}
+
+/* line 107, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#slider_containter {
+  position: relative;
+  top: 20%;
+}
+
+/* line 111, C:/Users/Maro Lapi/Desktop/Projekty/DJB refresh/CODE_DJBR/DJBR_CURRET/_sass/main_djb.scss */
+#watchword_banner {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=../_css/main_djb.map */

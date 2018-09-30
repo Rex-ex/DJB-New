@@ -1,0 +1,113 @@
+@import "compass";
+/*universal styles*/
+html{
+  height: 100%;
+}
+body {
+  transition: background-color .5s;
+  overflow-x: hidden;
+  background: honeydew;
+}
+main{
+  font-family: "Verdana", "Calibri", "Arial", sans-serif;
+  line-height: 1.6rem;
+}
+#mainCon{
+  position:relative;
+}
+.centered{
+  display: block;
+  margin: 0 auto;
+}
+#logo_containter{
+background: pink;
+}
+#nav_container{
+background:grey;
+}
+
+#djb_logo img{
+  position:relative;
+  bottom: 1.5rem;
+  height: 13rem;
+  width: 13rem;
+  z-index: 13;
+}
+/*NAV*/
+#banner{
+  position: fixed;
+  top: 0;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 20;
+  background:none;
+  
+  li{
+    float: left;
+    width: 16.6%;
+  }
+  li a{
+      position: relative;
+      display: block;
+      color: #595959;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  li a:hover{
+    color:#000000;
+  }
+  /*nav hover-underline effect*/
+  a:after{
+  content: '';
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.5rem;
+  opacity: 0;
+  background-color: #ff002a;
+  @include transition(all .3s);
+  @include transform (translate(-50%, 0));
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  visibility: hidden;
+  }
+  a:hover:after{
+  width: 80%;
+  visibility: visible;
+  opacity: 1;
+  }
+  //change
+  #active_underline a:after{
+  width: 80%;
+  visibility: visible;
+  opacity: 1;
+  background-color: pink;
+  }
+}
+/*END nav-hover-underline effect*/
+/*END-NAV*/
+
+/*JUMBO*/
+#jumbo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 50%;
+  margin: 3.5rem auto 0;
+  outline: 1px solid green;
+  background-image: url("../images/djb_1.png");
+  background-position: top;
+  background-size: cover;
+}
+#slider_containter{
+  position: relative;
+  top: 20%;
+}
+#watchword_banner{
+  max-width: 100%;
+}
