@@ -1,4 +1,4 @@
-  //function to OOP  !!! REBUILD
+  //function to OOP  !!! REBUILD //click outside close nav
   if (true){
   var sidenav = document.getElementById("mySidenav");
   var main = document.getElementById("mainCon");

@@ -1,4 +1,7 @@
 @import "compass";
+@import "compass/reset";
+@import "test_rwd";
+@import "varStyles";
 /*universal styles*/
 html{
   height: 100%;
@@ -6,10 +9,10 @@ html{
 body {
   transition: background-color .5s;
   overflow-x: hidden;
-  background: honeydew;
+  background: $mainColor;
 }
 main{
-  font-family: "Verdana", "Calibri", "Arial", sans-serif;
+  font-family: $mainFont;
   line-height: 1.6rem;
 }
 #mainCon{
@@ -69,9 +72,7 @@ background:grey;
   background-color: #ff002a;
   @include transition(all .3s);
   @include transform (translate(-50%, 0));
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
+  @include backface-visibility (hidden);
   visibility: hidden;
   }
   a:hover:after{

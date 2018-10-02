@@ -4,7 +4,7 @@ $(document).ready(function(){
     let $banner = $('#banner');
     let ScrlPos = $banner.offset();
     let jumboH = $jumbo.height();
-    let brkPoint = (jumboH / 2);
+    let brkPoint = (jumboH * 0.04);
     // alert(jumboH);    
     $win.scroll(function(){
       let ScrlCurrent = $banner.offset();
