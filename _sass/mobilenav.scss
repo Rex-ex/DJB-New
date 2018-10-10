@@ -1,13 +1,14 @@
-
+@import "flexbox";
 /*Hamburger-nav */
 #bar_container button{
     position: fixed;
     right: 0;
     top: 0;
     height: 3.5rem;
+    width: 3.5rem;
     border: none;
     outline: none;
-    background-color: grey;
+    background-color: none;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -19,10 +20,12 @@
 #bar3 {
     width: 1.5rem;
     height: 0.25rem;
-    background-color: #FFF;
+    background-color: orange;
     margin: 0.25rem 0;
     transition: 0.4s;
+    border-radius: 0.5rem; 
 }
+// onclick add class
 .changed button{
   background-color: #111 !important;
 }
@@ -37,6 +40,52 @@
     -webkit-transform: rotate(45deg) translate(-0.35rem, -0.25rem);
     transform: rotate(45deg) translate(-0.45rem, -0.25rem);
 }
+// END onclick add class
+/*music equalizer animation*/
+#bar_container .changed button div{
+  -webkit-animation-name: none !important;
+          animation-name: none !important;
+}
+#bar_container:not(.changed) button div {
+  -webkit-animation-name: hbar;
+          animation-name: hbar;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#bar1{
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+#bar3{
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+@-webkit-keyframes hbar {
+  from {
+    width: 1.5rem;
+  }
+  to {
+    width: 0.75rem;
+  }
+}
+@keyframes hbar {
+  from {
+    width: 1.5rem;
+  }
+  to {
+    width: 0.75rem;
+  }
+}
+/*END music equalizer animation*/
 /*END Hamburger-nav */
 
 /* The side navigation menu */
@@ -75,10 +124,7 @@
     color: #f1f1f1;
 }
 #subMenu li{
-  display: flex;
-  display: -webkit-box;  
-  display: -ms-flexbox;  
-  display: -webkit-flex;
+  @include flexbox;
   flex-direction: column;
   justify-content: center;
   align-items: center;
