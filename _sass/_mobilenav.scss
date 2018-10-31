@@ -1,6 +1,7 @@
 @import "compass";
-@import "flexbox";
-@import "animations";
+@import "compass/css3/animation";
+@import "flexbox_mxn";
+@import "animations_mxn";
 
 /*Hamburger-nav */
 #bar_container button{
@@ -36,61 +37,59 @@
 }
 .changed #bar1 {
     @include transform (rotate(-45deg) translate(-0.45rem, 0.25rem));
-    // -webkit-transform: rotate(-45deg) translate(-0.35rem, 0.25rem);
-    // transform: rotate(-45deg) translate(-0.45rem, 0.25rem);
 }
 .changed #bar2 {
     opacity: 0;
 }
 .changed #bar3 {
     @include transform (rotate(45deg) translate(-0.45rem, -0.25rem));
-    // -webkit-transform: rotate(45deg) translate(-0.35rem, -0.25rem);
-    // transform: rotate(45deg) translate(-0.45rem, -0.25rem);
 }
 // END onclick add class
 /*music equalizer animation*/
 #bar_container .changed button div{
-  @include animation(none, 0 !important); 
+  @include animation(none !important, 0); 
 }
 #bar_container:not(.changed) button div {
-  -webkit-animation-name: hbar;
-          animation-name: hbar;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  @include animation(hbar, 0.8s, linear, false, infinite);
 }
 
 #bar1{
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  @include animation-duration(0.7s);
+  @include animation-delay(0);
+}
+#bar2{
+  @include animation-duration(1.2s);
+  @include animation-delay(0.2s);
 }
 #bar3{
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  @include animation-duration(0.5s);
+  @include animation-delay(0.4s);
+
 }
-@-webkit-keyframes hbar {
-  from {
-    width: 1.5rem;
+@include keyframes(hbar){
+  0% {
+     width: 1.5rem;
   }
-  to {
-    width: 0.75rem;
+  100% {
+     width: 0.75rem;
   }
-}
-@keyframes hbar {
-  from {
-    width: 1.5rem;
-  }
-  to {
-    width: 0.75rem;
-  }
-}
+};
+// @-webkit-keyframes hbar {
+//   0% {
+//     width: 1.5rem;
+//   }
+//   100% {
+//     width: 0.75rem;
+//   }
+// }
+// @keyframes hbar {
+//   from {
+//     width: 1.5rem;
+//   }
+//   to {
+//     width: 0.75rem;
+//   }
+// }
 /*END music equalizer animation*/
 /*END Hamburger-nav */
 
