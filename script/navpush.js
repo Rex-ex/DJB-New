@@ -3,8 +3,7 @@ if (true){
   const sidenav = document.getElementById('mySidenav')
   const main = document.getElementById('mainCon')
   const btn = document.getElementById('bar_container')
-  let isOpen = false
-  
+  let isOpen = false  
   btn.addEventListener('click', toogleNav, false)
   
   $(document).ready(function(){
@@ -26,7 +25,7 @@ if (true){
     }    
   }
   
-  closeNav = () => {
+  function closeNav() {
     sidenav.style.width = '0'
     main.style.marginLeft = '0'
     btn.classList.remove('changed')
@@ -34,8 +33,8 @@ if (true){
     isOpen = false
   } 
   
-  openNav = () => {
-   sidenav.style.width = '250px'
+  function openNav(){
+    sidenav.style.width = '250px'
     main.style.marginLeft = '-250px'
     btn.classList.add('changed')
     document.body.style.backgroundColor = 'rgba(0,0,0,0.4)'
