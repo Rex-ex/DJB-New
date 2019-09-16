@@ -1,14 +1,14 @@
 @import "compass";
 @import "compass/reset";
-@import "test_rwd";
-@import "varStyles";
-@import "mobilenav";
-@import "flexbox_mxn";
+@import "_varStyles";
+@import "_mobilenav";
+@import "_flexbox_mxn";
+
 /*universal styles*/
 html{
   height: 100%;
 }
-body {
+body{
   transition: background-color .5s;
   overflow-x: hidden;
   background: $mainColor;
@@ -47,7 +47,7 @@ background:grey;
   width: 100%;
   z-index: 20;
   background:none;
-  
+
   li{
     float: left;
     width: 16.6%;
