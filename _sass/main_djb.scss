@@ -1,9 +1,9 @@
 @import "compass";
 @import "compass/reset";
-@import "_varStyles";
-@import "_mobilenav";
-@import "_flexbox_mxn";
-
+@import "test_rwd";
+@import "varStyles";
+@import "mobilenav";
+@import "flexbox_mxn";
 /*universal styles*/
 html{
   height: 100%;
