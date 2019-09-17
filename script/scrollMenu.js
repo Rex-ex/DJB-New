@@ -1,25 +1,29 @@
 // join two scripsts scroll, navpush to one OOP file
 $(document).ready(function(){
-    let $win = $(window);
-    let $jumbo = $("#jumbo");
-    let $banner = $('#banner');
-    let ScrlPos = $banner.offset();
-    let jumboH = $jumbo.height();
-    let brkPoint = (jumboH * 0.04);
-    // alert(jumboH);    
-    $win.scroll(function(){
-      if ($(window).innerWidth() >= 970){
-        let ScrlCurrent = $banner.offset();
-        if(ScrlCurrent.top > brkPoint){
+  const $win = $(window);
+  const $jumbo = $("#jumbo");
+  const $banner = $('#banner');
+  const jumboH = $jumbo.height();
+  const brkPoint = (jumboH * 0.04);
+  let scrolling = false;
+
+  $win.scroll(function() {
+    scrolling = true;
+  });
+
+  setInterval(function() {
+    if (scrolling) {
+      scrolling = false;
+      if ($win.innerWidth() >= 970){
+        let scrlCurrent = $banner.offset();
+        if (scrlCurrent.top > brkPoint){
           $banner.css("background", "grey");
           $banner.css("opacity", "0.9");
-        } else{
+        } else {
           $banner.css("background", "none");
           $banner.css("opacity", "1");
         };
       };
-    });
+    };
+  }, 250);
 });
-
-
-  
