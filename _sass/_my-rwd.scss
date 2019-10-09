@@ -1,0 +1,18 @@
+// work with _media-queries_mxn.scss
+// (#1.0) hide - show
+.SM-H-AB {
+  @include respond-above(sm) {
+    display: none;
+  }
+}
+.MD-H-AB {
+  @include respond-above(md) {
+    display: none;
+  }
+}
+.MD-H-BE {
+  @include respond-below(md) {
+    display: none;
+  }
+}
+// (#1.0) END - hide - show
