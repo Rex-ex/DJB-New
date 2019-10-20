@@ -1,7 +1,8 @@
 //function to OOP  !!! REBUILD //click outside close nav
 $(document).ready(function() {
   const sidenav = document.getElementById("mySidenav");
-  const main = document.getElementsByClassName("my-wrapper")[0];
+  // const main = document.getElementsByClassName("my-wrapper")[0];
+  const main = document.getElementsByClassName("my-container--jumbo")[0];
   const btn = document.getElementById("bar_container");
   const $blacked = $("#blacked");
 

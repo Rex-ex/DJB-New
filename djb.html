@@ -35,7 +35,7 @@
     <!--Side Menu-->
     <nav class="MD-H-AB">
       <div id="mySidenav">
-        <ul id="subMenu" class="list-unstyled">
+        <ul id="subMenu">
           <li><a href="#">Start</a></li>
           <li><a href="#">Oferta</a></li>
           <li><a href="#">Galeria</a></li>
@@ -64,27 +64,39 @@
       <!-- END- Blacked filter -->
 
       <header>
-        <div id="jumbo" class="my-container">
-          <nav class="mainNav g-box">
-            <div class="mainNav__logo">
-              <img src="icons/djb_logo.svg" alt="dj brachole logo" />
+        <!-- (1.0) -->
+        <div class="my-container">
+          <div class="my-container--jumbo">
+            <nav class="mainNav g-box">
+              <div class="mainNav__logo">
+                <img src="icons/djb_logo.svg" alt="dj brachole logo" />
+              </div>
+              <div class="mainNav__links MD-H-BE">
+                <ul class="linker g-box">
+                  <li class="is-activeLink"><a href="#">Start</a></li>
+                  <li><a href="#">Oferta</a></li>
+                  <li><a href="#">Galeria</a></li>
+                  <li><a href="#">Filmy</a></li>
+                  <li><a href="#">O&nbsp;Nas</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="hero">
+              <div class="hero__banner"></div>
+              <div class="hero__blur"></div>
+              <div class="hero__video">
+                <video autoplay muted loop id="jumboVideo">
+                  <!-- <source src="video/colorsHero.mp4" type="video/mp4" /> -->
+                </video>
+              </div>
             </div>
-            <div class="mainNav__links MD-H-BE">
-              <ul class="linker g-box">
-                <li class="is-activeLink"><a href="#">Start</a></li>
-                <li><a href="#">Oferta</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Filmy</a></li>
-                <li><a href="#">O&nbsp;Nas</a></li>
-                <li><a href="#">Kontakt</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div></div>
+          </div>
         </div>
       </header>
 
       <main>
+        <!-- (2.0) -->
         <section>
           <div class="my-container">
             <div class="box">
@@ -123,13 +135,51 @@
         </section>
 
         <section>
+          <!-- (3.0) -->
           <div class="my-container">
-            <div class="box">
-              <video width="100%" height="auto" autoplay loop muted>
-                <source src="video/DJB_smokeSlowMo1.mp4" type="video/mp4" />
-              </video>
+            <div class="my-container--mainFeatures">
+              <div class="split2Sides g-box">
+                <div class="split2Sides__videoBox">
+                  <!-- <video autoplay loop muted> -->
+                  <video>
+                    <source src="video/DJB_smokeSlowMo1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="split2Sides__features g-box">
+                  <div class="features__icon">
+                    <img src="icons/desc_newlyweds.svg" alt="" />
+                  </div>
+                  <div class="features__icon">
+                    <img src="icons/desc_cake.svg" alt="" />
+                  </div>
+                  <div class="features__icon">
+                    <img src="icons/desc_firm.svg" alt="" />
+                  </div>
+                  <div class="features__icon">
+                    <img src="icons/desc_twoDJ.svg" alt="" />
+                  </div>
+                  <div class="features__desc">
+                    <p>Hello</p>
+                  </div>
+                  <div class="features__desc">
+                    <p>Hello</p>
+                  </div>
+                  <div class="features__desc">
+                    <p>Hello</p>
+                  </div>
+                  <div class="features__desc">
+                    <p>Hello</p>
+                  </div>
+                  <div class="features__filter"></div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+
+        <section>
+          <!-- (4.0) -->
+          <div class="my-container" style="background:grey"></div>
         </section>
       </main>
     </div>
