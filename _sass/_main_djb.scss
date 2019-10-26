@@ -18,8 +18,8 @@
 // (1.0) JUMBO
 .my-container--jumbo {
   height: 100vh;
-  background-image: url("../images/djb_1.png");
-  background-position: 50% 8rem;
+  background-image: url("../images/djb_2.png");
+  background-position: 50% 6rem;
   background-size: contain;
   background-repeat: no-repeat;
   .mainNav {
@@ -32,6 +32,7 @@
       border-bottom: 1px solid $DJorange;
       background: #fff;
     }
+    font-family: $mainHeader;
     // box-shadow: $shadowBlack; onscroll
     z-index: 30;
     &__logo {
@@ -94,6 +95,17 @@
 }
 // (1.0) END-JUMBO
 // (2.0)
+.my-container__greetings {
+  // g-box
+  .greeting_desc {
+    &--header {
+      font-family: $mainHeader;
+    }
+    p {
+    }
+  }
+}
+// END-(2.0)
 // (3.0)
 .my-container--mainFeatures {
   .split2Sides {
