@@ -4,23 +4,23 @@
 @import "_animations_mxn";
 
 /*Hamburger-nav*/
-#bar_container button {
+#bar_container {
   position: fixed;
-  right: 0.5rem;
-  top: 0.5rem;
-  height: 3.5rem;
-  width: 3.5rem;
-  border: none;
-  border-radius: 3rem;
-  outline: none;
-  background-color: $mainColor;
-  @include transition-property(background-color);
-  @include transition-duration(0.8s);
-  @include transition-timing-function(ease-out);
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+  right: 1rem;
+  top: 1rem;
   z-index: 80;
+  & button {
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    background-color: $mainColor;
+    @include transition-property(background-color);
+    @include transition-duration(0.8s);
+    @include transition-timing-function(ease-out);
+    cursor: pointer;
+  }
 
   #bar1,
   #bar2,
@@ -28,7 +28,7 @@
     width: 1.5rem;
     height: 0.25rem;
     background-color: orange;
-    margin: 0.25rem 0 0.25rem 0.575rem;
+    margin: 0.25rem 0 0.25rem 0.6rem;
     @include transition(all 0.4s);
     border-radius: 0.5rem;
   }
@@ -45,29 +45,29 @@
     @include animation-duration(0.5s);
     @include animation-delay(0.4s);
   }
-}
-/*music equalizer animation*/
-#bar_container:not(.changed) button div {
-  @include animation(hbar, 0.8s, linear, false, infinite);
-}
-@-webkit-keyframes hbar {
-  0% {
-    width: 1.5rem;
-  }
-  100% {
-    width: 0.75rem;
-  }
-}
-@keyframes hbar {
-  from {
-    width: 1.5rem;
-  }
-  to {
-    width: 0.75rem;
-  }
-}
-/*END music equalizer animation*/
 
+  /*music equalizer animation*/
+  &:not(.changed) button div {
+    @include animation(hbar, 0.8s, linear, false, infinite);
+  }
+  @-webkit-keyframes hbar {
+    0% {
+      width: 1.5rem;
+    }
+    100% {
+      width: 0.75rem;
+    }
+  }
+  @keyframes hbar {
+    from {
+      width: 1.5rem;
+    }
+    to {
+      width: 0.75rem;
+    }
+  }
+  /*END music equalizer animation*/
+}
 // JS onclick add class.changed to Hamburger-nav
 .changed button {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -98,27 +98,60 @@
   width: 0;
   // background-color: $mySidenavColor;
   background-image: url("../images/bkg_darkFLIP.jpg");
-  padding-top: 60px;
+  // padding-top: 60px;
   transition: 0.5s;
   overflow-x: hidden;
   z-index: 30;
-}
-#subMenu li {
-  @include flexbox;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  a {
-    font-family: $mainHeader;
-    font-weight: bolder;
-    color: $mainColor;
-    text-decoration: none;
-    text-transform: uppercase;
-    @include transition(all 0.3s);
 
-    &:hover,
-    &:active {
-      color: $DJorange;
+  &__subMenu {
+    // g-box
+    height: inherit;
+    // padding: 5rem 0rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat (8, 1fr);
+    & > div {
+      place-self: center;
+    }
+    & div:nth-child(1) {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+    & div:nth-child(2) {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+    & div:nth-child(3) {
+      grid-column: 2 / 2;
+      grid-row: 4 /4;
+    }
+    & div:nth-child(4) {
+      grid-column: 2 / 2;
+      grid-row: 5 / 5;
+    }
+    & div:nth-child(5) {
+      grid-column: 2 / 2;
+      grid-row: 6 / 6;
+    }
+    & div:nth-child(6) {
+      grid-column: 2 / 2;
+      grid-row: 7 / 7;
+    }
+
+    li {
+      list-style-type: none;
+    }
+    a {
+      color: $mainColor;
+      font-family: $mainHeader;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      @include transition(all 0.3s);
+      &:hover,
+      &:active {
+        color: $DJorange;
+      }
     }
   }
 }

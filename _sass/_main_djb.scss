@@ -97,6 +97,7 @@
 // (2.0)
 .my-container__greetings {
   // g-box
+  height: auto;
   .greeting_desc {
     &--header {
       font-family: $mainHeader;
