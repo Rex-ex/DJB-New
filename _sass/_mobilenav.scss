@@ -96,9 +96,8 @@
   right: 0;
   height: 100%;
   width: 0;
-  // background-color: $mySidenavColor;
   background-image: url("../images/bkg_darkFLIP.jpg");
-  // padding-top: 60px;
+  background-size: cover;
   transition: 0.5s;
   overflow-x: hidden;
   z-index: 30;
@@ -108,37 +107,42 @@
     height: inherit;
     // padding: 5rem 0rem;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: repeat (8, 1fr);
+    grid-template-rows: 0.125fr repeat (6, 1fr) 0.125fr;
+    grid-row-gap: 1rem;
     & > div {
       place-self: center;
+      opacity: 0;
+      @include transition(opacity 0.2s 0.2s);
     }
     & div:nth-child(1) {
       grid-column: 2 / 2;
       grid-row: 2 / 2;
+      @include transition-delay(0.2s);
     }
     & div:nth-child(2) {
       grid-column: 2 / 2;
       grid-row: 3 / 3;
+      @include transition-delay(0.24s);
     }
     & div:nth-child(3) {
       grid-column: 2 / 2;
       grid-row: 4 /4;
+      @include transition-delay(0.28s);
     }
     & div:nth-child(4) {
       grid-column: 2 / 2;
       grid-row: 5 / 5;
+      @include transition-delay(0.32s);
     }
     & div:nth-child(5) {
       grid-column: 2 / 2;
       grid-row: 6 / 6;
+      @include transition-delay(0.36s);
     }
     & div:nth-child(6) {
       grid-column: 2 / 2;
       grid-row: 7 / 7;
-    }
-
-    li {
-      list-style-type: none;
+      @include transition-delay(0.4s);
     }
     a {
       color: $mainColor;
@@ -153,6 +157,9 @@
         color: $DJorange;
       }
     }
+  }
+  & .subMenu-isActive div {
+    opacity: 1;
   }
 }
 /* END The side navigation menu */
