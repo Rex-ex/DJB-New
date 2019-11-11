@@ -1,14 +1,13 @@
-//function to OOP  !!! REBUILD //click outside close nav
+//function to OOP, jQuery  !!! REBUILD //click outside close nav
 $(document).ready(function() {
   const sidenav = document.getElementById("mySidenav");
-  // const main = document.getElementsByClassName("my-wrapper")[0];
   const main = document.getElementsByClassName("my-container--jumbo")[0];
   const btn = document.getElementById("bar_container");
   const subMenu = document.getElementById("mySidenav__subMenu");
   const subMenuActive = document.getElementsByClassName(
     "mySidenav__subMenu--is-active"
   );
-  const $blacked = $("#blacked");
+  const $blacked = $(".filters__blacked");
 
   let isOpen = false;
   btn.addEventListener("click", toogleNav, false);
@@ -27,18 +26,22 @@ $(document).ready(function() {
     main.style.marginLeft = "0";
     btn.classList.remove("changed");
     subMenu.classList.remove("subMenu-isActive");
-    // $blacked.toggle();
     $blacked.css("opacity", "0");
     isOpen = false;
   }
 
   function openNav() {
     sidenav.style.width = "250px";
-    // main.style.marginLeft = "-250px";
     btn.classList.add("changed");
     subMenu.classList.add("subMenu-isActive");
-    // $blacked.toggle();
     $blacked.css("opacity", "0.8");
     isOpen = true;
   }
+});
+// temporary solution
+$(window).on("load", function() {
+  const btn = document.getElementById("bar_container");
+  setTimeout(function() {
+    btn.style.display = "block";
+  }, 3000);
 });

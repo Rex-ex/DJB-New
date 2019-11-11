@@ -1,4 +1,4 @@
-// TO DO: join two scripsts scroll, navpush to one OOP file !!
+// TO DO: rebuild waypoints, navpush to one OOP file !!
 $(document).ready(function() {
   const $win = $(window);
   const $jumbo = $("#jumbo");

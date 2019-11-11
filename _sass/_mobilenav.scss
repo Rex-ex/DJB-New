@@ -5,10 +5,11 @@
 
 /*Hamburger-nav*/
 #bar_container {
+  display: none;
   position: fixed;
   right: 1rem;
   top: 1rem;
-  z-index: 80;
+  z-index: 35;
   & button {
     height: 3.5rem;
     width: 3.5rem;
@@ -20,6 +21,7 @@
     @include transition-duration(0.8s);
     @include transition-timing-function(ease-out);
     cursor: pointer;
+    // z-index: 35;
   }
 
   #bar1,
@@ -31,6 +33,7 @@
     margin: 0.25rem 0 0.25rem 0.6rem;
     @include transition(all 0.4s);
     border-radius: 0.5rem;
+    // z-index: 35;
   }
 
   #bar1 {
@@ -105,7 +108,6 @@
   &__subMenu {
     // g-box
     height: inherit;
-    // padding: 5rem 0rem;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 0.125fr repeat (6, 1fr) 0.125fr;
     grid-row-gap: 1rem;
