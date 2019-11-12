@@ -5,11 +5,11 @@
 
 /*Hamburger-nav*/
 #bar_container {
-  display: none;
+  // display: none;
   position: fixed;
   right: 1rem;
   top: 1rem;
-  z-index: 35;
+  z-index: 40;
   & button {
     height: 3.5rem;
     width: 3.5rem;
@@ -21,7 +21,6 @@
     @include transition-duration(0.8s);
     @include transition-timing-function(ease-out);
     cursor: pointer;
-    // z-index: 35;
   }
 
   #bar1,
@@ -33,7 +32,6 @@
     margin: 0.25rem 0 0.25rem 0.6rem;
     @include transition(all 0.4s);
     border-radius: 0.5rem;
-    // z-index: 35;
   }
 
   #bar1 {

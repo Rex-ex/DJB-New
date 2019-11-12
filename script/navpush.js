@@ -39,9 +39,9 @@ $(document).ready(function() {
   }
 });
 // temporary solution
-$(window).on("load", function() {
-  const btn = document.getElementById("bar_container");
-  setTimeout(function() {
-    btn.style.display = "block";
-  }, 3000);
-});
+// $(window).on("load", function() {
+//   const btn = document.getElementById("bar_container");
+//   setTimeout(function() {
+//     btn.style.display = "block";
+//   }, 3000);
+// });
