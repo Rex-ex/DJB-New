@@ -8,8 +8,8 @@ if (true) {
       $preloaderDiv.fadeOut();
     }, 3000);
     // temporry solution | Promise?
-    let disFilters = setTimeout(function() {
-      $filters.css("display", "none");
-    }, 3500);
+    // let disFilters = setTimeout(function() {
+    // $filters.css("display", "none");
+    // }, 3500);
   });
 }

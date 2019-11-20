@@ -3,13 +3,15 @@ $(document).ready(function() {
   const sidenav = document.getElementById("mySidenav");
   const main = document.getElementsByClassName("my-container--jumbo")[0];
   const btn = document.getElementById("bar_container");
+  // ??
   const subMenu = document.getElementById("mySidenav__subMenu");
   const subMenuActive = document.getElementsByClassName(
     "mySidenav__subMenu--is-active"
   );
+  // ??
   const $blacked = $(".filters__blacked");
 
-  let isOpen = false;
+  // let isOpen = false;
   btn.addEventListener("click", toogleNav, false);
 
   function toogleNav() {
@@ -23,11 +25,12 @@ $(document).ready(function() {
 
   function closeNav() {
     sidenav.style.width = "0";
-    main.style.marginLeft = "0";
+    // main.style.marginLeft = "0";
     btn.classList.remove("changed");
     subMenu.classList.remove("subMenu-isActive");
     $blacked.css("opacity", "0");
-    isOpen = false;
+    // $blacked.css("width", "0");
+    // isOpen = false;
   }
 
   function openNav() {
@@ -35,7 +38,8 @@ $(document).ready(function() {
     btn.classList.add("changed");
     subMenu.classList.add("subMenu-isActive");
     $blacked.css("opacity", "0.8");
-    isOpen = true;
+    // $blacked.css("width", "100%");
+    // isOpen = true;
   }
 });
 // temporary solution
