@@ -5,13 +5,6 @@
   display: block;
 }
 .filters {
-  // display: none;
-  // position: fixed;
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: 90;
   &__blacked {
     // display: none;
     position: fixed;
@@ -19,8 +12,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    // height: 100%;
-    // width: 0;
     background: #000;
     opacity: 0;
     // filter: alpha(opacity=0);
@@ -70,10 +61,7 @@
 // (1.0) JUMBO
 .my-container--jumbo {
   height: 100vh;
-  background-image: url("../images/djb_2.png");
-  background-position: center 6rem;
-  background-size: contain;
-  background-repeat: no-repeat;
+  overflow: hidden;
   .mainNav {
     // g-box
     position: fixed;
@@ -143,6 +131,43 @@
       }
     }
     /*END nav-hover-underline effect*/
+  }
+  .hero {
+    position: relative;
+    flex-direction: column;
+    &__image {
+      position: absolute;
+      top: 5rem;
+      align-self: center;
+      z-index: 20;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  .jumbo__anime {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    .anime__header {
+      position: relative;
+      top: 50%;
+      left: 5rem;
+      z-index: 25;
+    }
+    .anime__container {
+      grid-template-columns: repeat(10, auto);
+      z-index: 10;
+      span {
+        height: 100vh;
+        background-color: white;
+        @include transition(background-color 1s);
+      }
+    }
   }
 }
 // (1.0) END-JUMBO
