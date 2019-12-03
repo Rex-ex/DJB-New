@@ -1,3 +1,4 @@
+// "use strict";
 if (true) {
   $("html").addClass("isActiveJS");
   // do only is JS avalible / work in progress
