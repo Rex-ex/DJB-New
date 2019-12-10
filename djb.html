@@ -33,8 +33,13 @@
       href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
-    <!-- anime.css -->
-    <link rel="stylesheet" href="_css/animate.min.css" />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="_css/animate.min.css"
+    />
     <!-- scripts CDN -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -164,14 +169,23 @@
             <!-- work in progress -->
             <div class="hero f-box">
               <div class="hero__image">
-                <img src="images/djb_2.png" alt="jumbo brachole" />
+                <img src="images/djb_3.png" alt="jumbo brachole" />
               </div>
-              <div class="hero__banner"></div>
-              <div class="hero__blur"></div>
-              <div class="hero__video">
-                <video autoplay muted loop id="jumboVideo">
-                  <!-- <source src="video/colorsHero.mp4" type="video/mp4" /> -->
-                </video>
+              <div class="hero__blur">
+                <div class="blur__video">
+                  <video autoplay loop muted>
+                    <source src="video/colors.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="hero__banner">
+                <div class="animated infinite slower flipInX">
+                  <p>Wesela</p>
+                  <p><span class="long">Studniówki</span></p>
+                  <p>Imprezy</p>
+                  <p>Rocznice</p>
+                  <p>Urodziny</p>
+                </div>
               </div>
             </div>
             <!-- work in progress -->
@@ -248,10 +262,11 @@
         </section>
       </main>
     </div>
-    <script src="script/pre-loader.js"></script>
+    <!-- <script src="script/pre-loader.js"></script> -->
     <script defer src="script/navpush.js"></script>
     <!-- <script defer src="script/scrollMenu.js"></script> -->
     <script defer src="script/anime.min.js"></script>
-    <script defer src="script/myAnime.js"></script>
+    <script defer src="script/banner.js"></script>
+    <!-- <script defer src="script/myAnime.js"></script> -->
   </body>
 </html>
