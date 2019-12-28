@@ -246,7 +246,7 @@
 }
 // END-(2.0)
 // (3.0)
-.my-container--mainFeatures {
+.my-container__mainFeatures {
   .split2Sides {
     // g-box
     height: 80vh;
@@ -287,3 +287,29 @@
     }
   }
 }
+// (4.0)
+.my-container__comments {
+  // f-box
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .comments__box {
+    // f-box
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: auto;
+    max-width: 40rem;
+    $commentFontSize: 3rem;
+    font-size: $commentFontSize;
+    // background: yellow;
+    p {
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      line-height: $commentFontSize;
+    }
+  }
+}
+// END-(4.0)

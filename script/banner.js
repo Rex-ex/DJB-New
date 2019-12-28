@@ -1,6 +1,7 @@
 "use strict";
 if (true) {
-  $(window).on("load", function() {
+  $(document).ready(function() {
+    // $(window).on("load", function() {
     const $bannerDiv = $(".hero__banner");
     const $text = $(".hero__banner p");
     const $textArray = [...$text];
