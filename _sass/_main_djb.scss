@@ -235,7 +235,7 @@
   .greeting_desc {
     &--header {
       h1 {
-        font-family: $mainHeader;
+        font-family: $mainFont;
         font-size: 3rem;
       }
     }
@@ -252,6 +252,11 @@
     height: 80vh;
     width: 100%;
     position: relative;
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: $mainColor;
+    // border-radius: 5rem;
+    box-shadow: $shadowBlack;
     // @include respond-above(md) {
     grid-template-columns: repeat (10, 1fr);
     // }
@@ -301,8 +306,9 @@
     min-height: 60vh;
     width: auto;
     max-width: 40rem;
-    $commentFontSize: 3rem;
+    $commentFontSize: 2.5rem;
     font-size: $commentFontSize;
+    cursor: pointer;
     // background: yellow;
     p {
       padding: 1rem;
