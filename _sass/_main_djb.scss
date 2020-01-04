@@ -388,13 +388,16 @@
   }
   .footer__brandSlider {
     .slider {
-      flex-direction: row;
-      align-items: center;
+      // flex-direction: row;
+      // align-items: center;
       // justify-content: center;
+      .brand--small img {
+        height: 6rem;
+      }
       .slide img {
         height: 8rem;
-        width: auto;
-        padding: 1rem;
+        width: 18rem;
+        padding: 0rem 0.5rem;
       }
     }
   }
