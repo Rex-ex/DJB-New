@@ -10,7 +10,7 @@
 $animationSpeed: 40s;
 $slideHeight: 8rem;
 $slideWidth: 19rem;
-$slideNum: 8;
+$slideNum: 15;
 // Animation
 @keyframes scroll {
   0% {
@@ -25,7 +25,7 @@ $slideNum: 8;
 .slider {
   position: relative;
   $heightSlider: 8rem;
-  $widthSlider: 62rem;
+  $widthSlider: $slideWidth * 3;
   height: $heightSlider;
   width: $widthSlider;
   background: white;
@@ -39,7 +39,7 @@ $slideNum: 8;
     content: "";
     height: $heightSlider;
     position: absolute;
-    width: $widthSlider / 6;
+    width: $widthSlider / 8;
     z-index: 2;
   }
 
@@ -60,7 +60,7 @@ $slideNum: 8;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: $slideWidth * $slideNum;
+    width: $slideWidth * $slideNum * 2;
   }
 
   .slide {
