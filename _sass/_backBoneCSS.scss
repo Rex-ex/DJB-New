@@ -6,6 +6,9 @@ html {
 body {
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+}
 .my-wrapper {
   position: relative;
   font-family: $mainFont;
@@ -14,7 +17,8 @@ body {
 }
 .my-container {
   position: relative;
-  min-height: 40rem;
+  min-height: 35rem;
+  padding: 5rem 0rem;
 }
 // (#1.0) END-global styles
 // (#2.0) Box - dispaly default
