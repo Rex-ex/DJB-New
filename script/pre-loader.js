@@ -7,9 +7,13 @@ if (true) {
     let fadeOut = setTimeout(function() {
       $preloaderDiv.fadeOut();
     }, 3000);
+    let hidePreloader = setTimeout(function() {
+      $preloaderDiv.css("display", "none");
+    }, 3500);
     // temporry solution | Promise?
     // let disFilters = setTimeout(function() {
     // $filters.css("display", "none");
+
     // }, 3500);
   });
 }

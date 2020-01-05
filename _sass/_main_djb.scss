@@ -5,9 +5,9 @@
   display: block;
 }
 .filters {
-  display: none;
+  // display: none;
   &__blacked {
-    // display: none;
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -21,7 +21,7 @@
   }
   &__preloader {
     // g-box
-    visibility: hidden; //temp - hidden preloader!!
+    // visibility: hidden; //temp - hidden preloader!!
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (1, 1fr);
     position: fixed;
@@ -366,6 +366,7 @@
       font-style: $mainFont;
       font-style: italic;
       font-size: $header_size;
+      text-align: justify;
       text-decoration: none;
     }
   }
@@ -392,6 +393,7 @@
   }
   .footer__banner {
     padding: 2rem;
+    overflow: hidden;
   }
   .footer__brandSlider {
     box-shadow: $shadowWhite;

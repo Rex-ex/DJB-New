@@ -28,6 +28,7 @@ $(document).ready(function() {
     // main.style.marginLeft = "0";
     btn.classList.remove("changed");
     subMenu.classList.remove("subMenu-isActive");
+    $blacked.css("display", "none");
     $blacked.css("opacity", "0");
     // $blacked.css("width", "0");
     // isOpen = false;
@@ -37,6 +38,7 @@ $(document).ready(function() {
     sidenav.style.width = "250px";
     btn.classList.add("changed");
     subMenu.classList.add("subMenu-isActive");
+    $blacked.css("display", "block");
     $blacked.css("opacity", "0.8");
     // $blacked.css("width", "100%");
     // isOpen = true;

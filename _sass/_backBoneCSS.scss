@@ -11,9 +11,11 @@ a {
 }
 .my-wrapper {
   position: relative;
+  width: 100%;
   font-family: $mainFont;
   line-height: 1.6rem;
   background: $mainColor;
+  overflow-x: hidden;
 }
 .my-container {
   position: relative;
