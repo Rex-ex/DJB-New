@@ -7,9 +7,11 @@ if (true) {
     const $filters = $(".filters");
     const $nav = $(".mainNav");
     const $hero = $(".hero");
+    const $menu = $(".bar_container");
     // $preloaderDiv.fadeOut();
     $nav.fadeOut();
     $hero.fadeOut();
+    $menu.fadeOut();
     let fadeOut = setTimeout(function() {
       $preloaderDiv.fadeOut();
     }, 3000);
@@ -23,6 +25,7 @@ if (true) {
     const animeContainer = ".anime__container";
     const $nav = $(".mainNav");
     const $hero = $(".hero");
+    const $menu = $(".bar_container");
     let tl = anime.timeline({
       easing: "easeOutExpo",
       duration: 750
@@ -50,6 +53,7 @@ if (true) {
     let showElements = setTimeout(function() {
       $nav.fadeIn();
       $hero.fadeIn();
+      $menu.fadeIn();
     }, 4000);
   }
 }

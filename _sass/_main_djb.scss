@@ -86,8 +86,11 @@
         $coverImg: 0.25rem;
         position: absolute;
         top: $coverImg;
-        height: $logoHeight;
+        height: $logoHeight / 1.5;
         padding-left: $coverImg;
+        @include respond-above(md) {
+          height: $logoHeight;
+        }
       }
     }
     &__links {
@@ -231,9 +234,13 @@
   text-align: center;
   // background-image: url("../images/bkg2.svg");
   // background-position: 50% 0;
-  background-size: 100% 100vh;
-  background-repeat: no-repeat;
+  // background-size: 100% 100vh;
+  // background-repeat: no-repeat;
   .greeting_desc {
+    @include respond-above(md) {
+      width: 90%;
+      outline: 1px yellow solid;
+    }
     &--header {
       h1 {
         font-family: $mainFont;
@@ -287,7 +294,11 @@
         z-index: 5;
         img {
           height: 80vh;
-          width: auto;
+          width: 100%;
+          @include respond-above(md) {
+            height: 80vh;
+            width: auto;
+          }
         }
       }
     }
@@ -308,7 +319,7 @@
     align-items: center;
     justify-content: center;
     min-height: 60vh;
-    width: auto;
+    // width: auto;
     max-width: 40rem;
     $commentFontSize: 2.5rem;
     font-size: $commentFontSize;
@@ -327,8 +338,11 @@
 .my-container__promo {
   // f-box
   position: relative;
-  height: 90vh;
+  height: 70vh;
   width: 100%;
+  @include respond-above(md) {
+    height: 90vh;
+  }
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -337,13 +351,30 @@
   border-color: $mainColor;
   box-shadow: $shadowBlack;
   overflow: hidden;
+  // video class change??
+  .promo__blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @include respond-above(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    z-index: 5;
+  }
   .promo__filter {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 15;
   }
   .promo__header {
     position: absolute;
@@ -355,8 +386,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    $header_size: 3.25rem;
-    height: $header_size * 2;
+    $header_size: 2rem;
+    @include respond-above(md) {
+      height: $header_size * 3;
+    }
+    height: $header_size * 2.5;
     border: 2px solid $mainColor;
     border-radius: 1rem;
     z-index: 25;
@@ -370,11 +404,11 @@
       text-decoration: none;
     }
   }
-  .promo__clip video {
-    height: 90vh;
-    width: 100%;
-    z-index: 15;
-  }
+  // .promo__clip video {
+  //   height: 90vh;
+  //   width: 100%;
+  //   z-index: 20;
+  // }
 }
 // END-(5.0)
 // (6.0)
@@ -420,9 +454,13 @@
   }
   .footer__social {
     & img {
-      margin: 3rem 2rem;
       height: 5rem;
       width: 5rem;
+      margin: 1rem;
+      @include respond-above(md) {
+        margin: 3rem 2rem;
+      }
+
       // outline: yellow 2px solid;
     }
   }
