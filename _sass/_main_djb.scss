@@ -21,7 +21,7 @@
   }
   &__preloader {
     // g-box
-    // visibility: hidden; //temp - hidden preloader!!
+    visibility: hidden; //temp - hidden preloader!!
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: repeat (1, 1fr);
     position: fixed;
