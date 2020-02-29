@@ -19,8 +19,11 @@ a {
 }
 .my-container {
   position: relative;
-  // min-height: 35rem;
   padding: 5rem 0rem;
+}
+// misc
+.orange {
+  color: $DJorange;
 }
 // (#1.0) END-global styles
 // (#2.0) Box - dispaly default
@@ -41,8 +44,3 @@ a {
   @include display-grid;
 }
 // (#2.2) END-CSS Grid Layout
-
-// misc
-.orange {
-  color: $DJorange;
-}

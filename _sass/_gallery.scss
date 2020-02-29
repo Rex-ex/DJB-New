@@ -1,0 +1,18 @@
+.my-container__gallery {
+  position: relative;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  img {
+    padding: 0.25rem;
+    box-shadow: $shadowBlack;
+    height: 150px;
+    width: 225px;
+  }
+  .vertical {
+    height: 225px !important;
+    width: 150px !important;
+  }
+}
