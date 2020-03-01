@@ -5,14 +5,16 @@
   align-items: center;
   justify-content: space-around;
   align-content: space-around;
+  $img_short: 100px;
+  $img_longer: 150px;
   img {
-    padding: 0.25rem;
+    height: $img_short;
+    width: $img_longer;
+    margin: 0.25rem;
     box-shadow: $shadowBlack;
-    height: 150px;
-    width: 225px;
   }
   .vertical {
-    height: 225px !important;
-    width: 150px !important;
+    height: $img_longer;
+    width: $img_short;
   }
 }
