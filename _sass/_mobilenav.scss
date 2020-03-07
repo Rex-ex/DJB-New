@@ -7,15 +7,16 @@
 #bar_container {
   // display: none;
   position: fixed;
-  right: 1rem;
-  top: 1rem;
+  right: 0.75rem;
+  top: 0.75rem;
   z-index: 40;
   & button {
     height: 3.5rem;
     width: 3.5rem;
-    border: none;
-    border-radius: 3rem;
+    border: 2px solid $DJorange;
+    // border: none;
     outline: none;
+    border-radius: 3rem;
     background-color: $mainColor;
     @include transition-property(background-color);
     @include transition-duration(0.8s);
@@ -73,6 +74,7 @@
 // JS onclick add class.changed to Hamburger-nav
 .changed button {
   background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
 
   div {
     @include animation(none !important, 0); //no animation for all bars
@@ -161,6 +163,27 @@
   }
   & .subMenu-isActive div {
     opacity: 1;
+  }
+  .flags__containerMobile {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    z-index: 30;
+    .flags__mainMobile {
+      a {
+        cursor: pointer;
+      }
+      img {
+        height: 1.75rem;
+        width: 2.5rem;
+      }
+    }
+    .flags__subMobile {
+      img {
+        height: 2.25rem;
+        width: 3rem;
+      }
+    }
   }
 }
 /* END The side navigation menu */
