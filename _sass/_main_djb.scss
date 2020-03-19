@@ -174,9 +174,28 @@
       // align-self: center;
       overflow: hidden;
       z-index: 15;
-      img {
-        // height: 100%;
-        // width: 100%;
+      &--sub {
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .offer {
+        background-image: url("../images/jumbo/jumbo_offer.jpg");
+      }
+      .gallery {
+        background-image: url("../images/jumbo/jumbo_gallery.jpg");
+      }
+      .clips {
+        background-image: url("../images/jumbo/jumbo_clips.jpg");
+      }
+      .aboutUs {
+        background-image: url("../images/jumbo/jumbo_aboutUS.jpg");
+        background-position: top;
+      }
+      .contact {
+        background-image: url("../images/jumbo/jumbo_contact.jpg");
       }
     }
 
