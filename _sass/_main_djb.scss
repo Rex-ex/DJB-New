@@ -494,11 +494,18 @@
     }
   }
   .footer__social {
+    // f-box
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     & img {
-      height: 5rem;
-      width: 5rem;
+      height: 3rem;
+      width: 3rem;
       margin: 1rem;
-      @include respond-above(md) {
+      @include respond-above(sm) {
+        height: 5rem;
+        width: 5rem;
         margin: 3rem 2rem;
       }
 
