@@ -3,4 +3,9 @@
   position: relative;
   flex-direction: column;
   align-items: center;
+  .clip {
+    margin: 0.5rem;
+    padding: 0.25rem;
+    box-shadow: $shadowBlack;
+  }
 }
