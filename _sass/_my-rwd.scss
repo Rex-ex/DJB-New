@@ -10,9 +10,20 @@
     display: none;
   }
 }
+.LG-H-AB {
+  @include respond-above(lg) {
+    display: none;
+  }
+}
 .MD-H-BE {
   @include respond-below(md) {
     display: none;
   }
 }
+.LG-H-BE {
+  @include respond-below(lg) {
+    display: none;
+  }
+}
+
 // (#1.0) END - hide - show
