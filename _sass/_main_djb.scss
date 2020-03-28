@@ -270,7 +270,7 @@
 // (2.0)
 .my-container__greetings {
   // f-box
-  min-height: 35rem;
+  // min-height: 35rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -300,6 +300,10 @@
     }
     &--p {
       font-size: 1.25rem;
+      blockquote {
+        padding: 2.5rem 0rem;
+        font-style: italic;
+      }
     }
     &--contact {
       font-size: 1.75rem;
@@ -427,18 +431,21 @@
 // END-(4.0)
 // (5.0)
 .my-container__promo {
-  // f-box
   // position: relative;
   // height: 70vh;
   max-height: 100vh;
   width: 100%;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: $mainColor;
+  box-shadow: $shadowBlack;
   overflow: hidden;
   @include respond-above(md) {
     // height: 90vh;
   }
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 
   // overflow: hidden;
   // video class change??
@@ -447,10 +454,7 @@
     // height: 100%;
     // height: 50vh;
     // width: 100%;
-    border-width: 2px 0px;
-    border-style: solid;
-    border-color: $mainColor;
-    box-shadow: $shadowBlack;
+
     z-index: 5;
     @include respond-above(md) {
       // position: absolute;
