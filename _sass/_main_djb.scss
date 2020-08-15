@@ -1,9 +1,11 @@
 // Main scss
 // (+) _mobilenav.scss
 // (0.0) *overlay filters*
+
 .isActiveJS {
   display: block;
 }
+
 .filters {
   // display: none;
   &__blacked {
@@ -19,6 +21,7 @@
     @include transition(all 0.3s);
     z-index: 30;
   }
+
   &__preloader {
     // g-box
     // visibility: hidden; //temp - hidden preloader!!
@@ -33,20 +36,24 @@
     height: 100%;
     background: #fff;
     z-index: 90;
+
     .preloader__logo {
       grid-column: 1 / 3;
       grid-row: 1 / 1;
       place-self: center;
       z-index: 95;
+
       img {
         height: 15rem;
         height: 15rem;
       }
     }
+
     .preloader__spinner {
       grid-column: 1 / 3;
       grid-row: 1 / 1;
       place-self: center;
+
       svg {
         height: 30rem;
         width: 30rem;
@@ -61,9 +68,11 @@
 }
 // (0.0) END-overlay filters
 // (1.0) JUMBO
+
 .my-container--jumbo {
   height: 100vh;
   overflow: hidden;
+
   .mainNav {
     // g-box
     position: fixed;
@@ -77,6 +86,7 @@
     font-family: $mainHeader;
     // box-shadow: $shadowBlack; onscroll
     z-index: 30;
+
     &__logo {
       position: relative;
       z-index: 35;
@@ -93,22 +103,25 @@
         }
       }
     }
+
     &__links {
       // grid-column: 2 / 2;
       & .linker {
         // g-box
         grid-template-columns: repeat(6, 1fr) 0.25fr;
         grid-gap: 2rem;
+
         & a {
           position: relative;
           top: 1rem;
-          padding: 1rem 0rem;
+          padding: 1rem 0;
           color: #000;
           font-weight: bold;
           text-transform: uppercase;
           text-decoration: none;
           @include transition(all 0.3s);
         }
+
         & a:hover,
         .is-activeLink a {
           color: $DJorange;
@@ -128,6 +141,7 @@
           @include backface-visibility(hidden);
           visibility: hidden;
         }
+
         & a:hover:after {
           width: 90%;
           visibility: visible;
@@ -137,20 +151,24 @@
     }
     /*END nav-hover-underline effect*/
   }
+
   .flags__container {
     position: fixed;
     top: 1rem;
     right: 0.75rem;
     z-index: 30;
+
     .flags__main {
       a {
         cursor: pointer;
       }
+
       img {
         height: 1.85rem;
         width: 2.5rem;
       }
     }
+
     .flags__sub {
       img {
         height: 2.25rem;
@@ -158,6 +176,7 @@
       }
     }
   }
+
   .hero {
     // f-box
     position: relative;
@@ -168,12 +187,14 @@
     width: 100%;
     $bannerHeight: 8rem;
     $bannerWidth: 36rem;
+
     &__image {
       position: absolute;
       top: 4rem;
       // align-self: center;
       overflow: hidden;
       z-index: 15;
+
       &--sub {
         height: 100vh;
         width: 100vw;
@@ -181,19 +202,24 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
       .offer {
         background-image: url("../images/jumbo/jumbo_offer.jpg");
       }
+
       .gallery {
         background-image: url("../images/jumbo/jumbo_gallery.jpg");
       }
+
       .clips {
         background-image: url("../images/jumbo/jumbo_clips.jpg");
       }
+
       .aboutUs {
         background-image: url("../images/jumbo/jumbo_aboutUS.jpg");
         background-position: top;
       }
+
       .contact {
         background-image: url("../images/jumbo/jumbo_contact.jpg");
       }
@@ -211,6 +237,7 @@
       box-shadow: $shadowBlack;
       overflow: hidden;
       z-index: 20;
+
       .blur__video {
         position: absolute;
         left: 0;
@@ -219,6 +246,7 @@
         height: 100%;
       }
     }
+
     &__banner {
       position: absolute;
       bottom: 5%;
@@ -229,6 +257,7 @@
       width: $bannerWidth;
       // outline: 1px solid red;
       z-index: 25;
+
       p {
         // display: none;
         font-size: 5rem;
@@ -236,12 +265,14 @@
         text-align: center;
         color: white;
         z-index: 25;
+
         .long {
           font-size: 4.1rem;
         }
       }
     }
   }
+
   .jumbo__anime {
     position: absolute;
     top: 0;
@@ -249,15 +280,18 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
+
     .anime__header {
       position: relative;
       top: 50%;
       left: 5rem;
       z-index: 25;
     }
+
     .anime__container {
       grid-template-columns: repeat(10, auto);
       z-index: 10;
+
       span {
         height: 100vh;
         background-color: white;
@@ -268,6 +302,7 @@
 }
 // (1.0) END-JUMBO
 // (2.0)
+
 .my-container__greetings {
   // f-box
   // min-height: 35rem;
@@ -276,6 +311,7 @@
   justify-content: center;
   text-align: center;
   line-height: 3rem;
+
   .greeting_desc {
     width: 90%;
     @include respond-above(sm) {
@@ -286,6 +322,7 @@
       width: 60%;
       line-height: 3.5rem;
     }
+
     &--header {
       h1,
       h2,
@@ -298,19 +335,24 @@
         }
       }
     }
+
     &--p {
       font-size: 1.25rem;
+
       blockquote {
-        padding: 2.5rem 0rem;
+        padding: 2.5rem 0;
         font-style: italic;
       }
     }
+
     &--contact {
       font-size: 1.75rem;
-      p,
-      a {
+
+      a,
+      p {
         text-decoration: none;
         color: #000;
+
         img {
           width: 3rem;
         }
@@ -320,43 +362,49 @@
 }
 // END-(2.0)
 // (3.0)
+
 .my-container__mainFeatures {
   .oneOnAnotcher {
     position: relative;
     height: 130vh;
     width: 100%;
     overflow: hidden;
+
     &__videoBox {
       height: 60vh;
-      border-width: 2px 0px;
+      border-width: 2px 0;
       border-style: solid;
       border-color: $mainColor;
       box-shadow: $shadowBlack;
       // width: 100%;
       overflow: hidden;
+
       video {
         margin-top: -10vw;
         margin-left: 40vw;
         transform: translate(-30%);
       }
     }
+
     &__features {
       height: 70vh;
       width: 100%;
       overflow: hidden;
-      margin: 1rem 0rem;
+      margin: 1rem 0;
+
       img {
         height: 90%;
         width: 100%;
       }
     }
   }
+
   .split2Sides {
     // g-box
     height: 80vh;
     width: 100%;
     position: relative;
-    border-width: 2px 0px;
+    border-width: 2px 0;
     border-style: solid;
     border-color: $mainColor;
     // border-radius: 5rem;
@@ -365,8 +413,10 @@
     grid-template-columns: repeat (10, 1fr);
     // }
     overflow: hidden;
+
     &__videoBox {
       grid-column: 1 / 10;
+
       & video {
         // width: 120%;
         // height: auto;
@@ -376,11 +426,13 @@
         z-index: 1;
       }
     }
+
     &__features {
       grid-column: 6 / 10;
       // g-box
       grid-template-columns: repeat (4, 1fr);
       grid-template-rows: repeat (4, 1fr);
+
       .features__arrows {
         grid-column: 4 / 4;
         grid-row: 1 / 4;
@@ -388,6 +440,7 @@
         align-self: center;
         justify-self: end;
         z-index: 5;
+
         img {
           height: 80vh;
           width: 100%;
@@ -401,14 +454,17 @@
   }
 }
 // (4.0)
+
 .my-container__comments {
   // f-box
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   h2 {
     padding: 0.5rem;
   }
+
   .comments__box {
     // f-box
     flex-direction: column;
@@ -420,6 +476,7 @@
     $commentFontSize: 2.5rem;
     font-size: $commentFontSize;
     cursor: pointer;
+
     p {
       padding: 1rem;
       text-align: center;
@@ -430,12 +487,13 @@
 }
 // END-(4.0)
 // (5.0)
+
 .my-container__promo {
   // position: relative;
   // height: 70vh;
   max-height: 100vh;
   width: 100%;
-  border-width: 2px 0px;
+  border-width: 2px 0;
   border-style: solid;
   border-color: $mainColor;
   box-shadow: $shadowBlack;
@@ -446,7 +504,6 @@
   // flex-direction: column;
   // align-items: center;
   // justify-content: center;
-
   // overflow: hidden;
   // video class change??
   .promo__video {
@@ -454,7 +511,6 @@
     // height: 100%;
     // height: 50vh;
     // width: 100%;
-
     z-index: 5;
     @include respond-above(md) {
       // position: absolute;
@@ -464,6 +520,7 @@
       // height: 100%;
       // width: 100%;
     }
+
     video {
       display: block;
       height: 100%;
@@ -478,6 +535,7 @@
       }
     }
   }
+
   .promo__filter {
     // position: absolute;
     bottom: 0;
@@ -487,6 +545,7 @@
     background: rgba(0, 0, 0, 0.3);
     z-index: 15;
   }
+
   .promo__header {
     position: absolute;
     top: 50%;
@@ -504,6 +563,7 @@
     border: 2px solid $mainColor;
     border-radius: 1rem;
     z-index: 25;
+
     & h2 a {
       padding: 2rem;
       color: $mainColor;
@@ -520,6 +580,7 @@
 }
 // END-(5.0)
 // (6.0)
+
 .my-container__footer {
   // f-box
   flex-direction: column;
@@ -529,16 +590,20 @@
   background-image: url("../images/bkg_darkFLIP.jpg");
   background-size: cover;
   background-position: center;
+
   hr {
     width: 50rem;
     border: 1.25px solid $DJorange;
   }
+
   .footer__banner {
     padding: 2rem;
     overflow: hidden;
   }
+
   .footer__brandSlider {
     box-shadow: $shadowWhite;
+
     .slider {
       // flex-direction: row;
       // align-items: center;
@@ -547,8 +612,9 @@
         img {
           height: 8rem;
           width: 18rem;
-          padding: 0rem 0.5rem;
+          padding: 0 0.5rem;
         }
+
         .brand--small {
           // max-height: 5rem;
           // outline: 2px solid red;
@@ -560,12 +626,14 @@
       }
     }
   }
+
   .footer__social {
     // f-box
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
     & img {
       height: 3rem;
       width: 3rem;
@@ -575,17 +643,18 @@
         width: 5rem;
         margin: 3rem 2rem;
       }
-
       // outline: yellow 2px solid;
     }
   }
+
   .footer__address {
     // f-box
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    p,
-    a {
+
+    a,
+    p {
       color: $mainColor;
       text-decoration: none;
     }
